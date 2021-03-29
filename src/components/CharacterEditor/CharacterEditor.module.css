@@ -6,11 +6,13 @@
 
 .maxWidthWrapper {
   max-width: 1024px;
+  position: relative;
 }
 
 .header {
   padding-bottom: 64px;
-  max-width: 65%;
+  /* max-width: 65%; ME */
+  width: 65%;
 }
 
 .title {
@@ -27,13 +29,26 @@
 }
 
 .characterWrapper {
-  min-height: 500px;
-  position: fixed;
-  top: 96px;
-  bottom: 0;
-  right: 0;
+  min-height: 500px; /* correct */
+  position: fixed; /* correct */
+  top: 96px; /* Josh uses 15%, but I think this (at 3/4 of padding) is the better solution, maybe */
+  left: 50%; /* JOSH */
+  margin-left: 32px; /* JOSH */
+  /* bottom: 0; ME */
+  bottom: 5%; /* Josh */ 
+  /* right: 0; MY attempt */
 }
 
 .controlColumn {
-  max-width: 50%;
+  /* max-width: 50%; ME */
+  width: 50%;
+}
+
+.perspectiveEffect {
+  position: fixed;
+  top: 60%;
+  height: 40%;
+  width: 100%;
+  left: 0;
+  background-color: hsl(195deg, 20%, 86%);
 }
