@@ -30,3 +30,13 @@ body {
   padding: 0;
   border: 0;
 }
+
+.background {
+  position: sticky;
+  margin-bottom: -128px;
+  bottom: 0;
+  right: 0;
+  height: 40vh;
+  opacity: 0.0;
+  background-color: green;
+}

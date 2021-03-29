@@ -1,0 +1,25 @@
+/* background-color: hsl(195deg, 20%, 86%); */
+
+/* .background {
+  position: fixed;
+  bottom: 0px;
+  height: 40vh;
+  background-color: green;
+  z-index: 1;
+} */
+.background {
+  position: sticky;
+  margin-bottom: -128px;
+  bottom: 0;
+  right: 0;
+  height: 40vh;
+  background-color: green;
+}
+
+body:after {
+  content: '';
+  position: fixed;
+  height: 40%;
+  width: 100%;
+  background-color:hsl(195deg, 20%, 86%);
+}
